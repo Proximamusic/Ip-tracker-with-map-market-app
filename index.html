@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  
+  <title>IP Address Tracker</title>
+
+</head>
+<body>
+  <div class="header">
+    <h1 class="heading">IP Address Tracker</h1>
+<div class="search-bar">
+    <input type="text" id="ip-input" placeholder="Search for an Authentic IP">
+    <button class="search"></button>
+  </div>
+  </div>
+
+  <div class="data-section">
+    <div class="data-block">
+     <p class="name">I.P ADDRESS</p>
+     <span class="ip-span">IP</span>
+    </div>
+    <div class="data-block">
+      <p class="name">LOCATION</p>
+      <span class="location-span">Blank</span>
+     </div>
+     <div class="data-block">
+      <p class="name">TIMEZONE</p>
+      <span class="timezone-span">GMT +5:30</span>
+     </div>
+     <div class="data-block">
+      <p class="name">ISP</p>
+      <span class="isp-span">Blank</span>
+     </div>
+  </div>
+  <div id="map">
+   
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
